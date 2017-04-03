@@ -1,8 +1,5 @@
---Write a trigger named A9Trigger that will adjust the quantity on hand value for products if line quantity of an order 
---in order line gets changed as a result of update, delete, or insert. You must consider all possible cases. 
---You will turn in the code for the trigger and the code you use to test the trigger. Named the file A9.sql. 
---Please note you turn in the assignment both in print and on Blackboard. You will use the same database as in Assignment 7.
---  I strongly encourage you to write the trigger from scratch rather than modifying the example from class
+--This trigger will adjust the quantity on hand value for products if line quantity of an order 
+--in order line gets changed as a result of update, delete, or insert. 
 CREATE TRIGGER UPDATE_PRODUCT_QUANTITY_ON_HAND--Command(s) completed successfully.
 ON LGLINE
 AFTER INSERT, DELETE, UPDATE
